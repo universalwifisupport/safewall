@@ -25,95 +25,104 @@ export function Navigation() {
   }, []);
 
   return (
-    <header
-      className={`fixed z-50 transition-all duration-500 ${
-        isScrolled 
-          ? "top-4 left-4 right-4" 
-          : "top-0 left-0 right-0"
-      }`}
-    >
-      <nav 
-        className={`mx-auto transition-all duration-500 ${
-          isScrolled || isMobileMenuOpen
-            ? "bg-background/80 backdrop-blur-xl border border-foreground/10 rounded-2xl shadow-lg max-w-[1200px]"
-            : "bg-transparent max-w-[1400px]"
+    <>
+      <header
+        className={`fixed z-50 transition-all duration-500 ${
+          isScrolled 
+            ? "top-4 left-4 right-4" 
+            : "top-0 left-0 right-0"
         }`}
       >
-        <div 
-          className={`flex items-center justify-between transition-all duration-500 px-6 lg:px-8 ${
-            isScrolled ? "h-14" : "h-20"
+        <nav 
+          className={`mx-auto transition-all duration-500 ${
+            isScrolled || isMobileMenuOpen
+              ? "bg-background/80 backdrop-blur-xl border border-foreground/10 rounded-2xl shadow-lg max-w-[1200px]"
+              : "bg-transparent max-w-[1400px]"
           }`}
         >
-          {/* Logo */}
-          <a href="/" className="flex items-center gap-2 group">
-            <div className="flex flex-col leading-none">
-              <span className={`font-display tracking-tight transition-all duration-500 ${isScrolled ? "text-base" : "text-lg"}`}>Safe Wall Systems</span>
-              <span className={`text-muted-foreground font-mono transition-all duration-500 ${isScrolled ? "text-[8px]" : "text-[9px]"}`}>HOME SECURITY</span>
-            </div>
-          </a>
+          <div 
+            className={`flex items-center justify-between transition-all duration-500 px-4 md:px-6 lg:px-8 ${
+              isScrolled ? "h-14" : "h-16 md:h-20"
+            }`}
+          >
+            {/* Logo */}
+            <a href="/" className="flex items-center gap-2 group">
+              <div className="flex flex-col leading-none">
+                <span className={`font-display tracking-tight transition-all duration-500 ${isScrolled ? "text-sm md:text-base" : "text-base md:text-lg"}`}>Safe Wall Systems</span>
+                <span className={`text-muted-foreground font-mono transition-all duration-500 ${isScrolled ? "text-[7px] md:text-[8px]" : "text-[8px] md:text-[9px]"}`}>HOME SECURITY</span>
+              </div>
+            </a>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-12">
-            {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                className="text-sm text-foreground/70 hover:text-foreground transition-colors duration-300 relative group"
-              >
-                {link.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-px bg-foreground transition-all duration-300 group-hover:w-full" />
-              </a>
-            ))}
-          </div>
-
-          {/* Desktop CTA */}
-          <div className="hidden md:flex items-center gap-4">
-            <a href="tel:+16504125014" className={`text-foreground/70 hover:text-foreground transition-all duration-500 font-mono ${isScrolled ? "text-xs" : "text-sm"}`}>
+            {/* Mobile Phone Number */}
+            <a 
+              href="tel:+16504125014" 
+              className={`md:hidden text-foreground/70 hover:text-foreground transition-all duration-500 font-mono ${isScrolled ? "text-xs" : "text-sm"}`}
+            >
               (650) 412-5014
             </a>
-            <Button
-              size="sm"
-              className={`bg-foreground hover:bg-foreground/90 text-background rounded-full transition-all duration-500 ${isScrolled ? "px-4 h-8 text-xs" : "px-6"}`}
-              onClick={() => window.location.href = 'tel:+16504125014'}
+
+            {/* Desktop Navigation */}
+            <div className="hidden lg:flex items-center gap-12">
+              {navLinks.map((link) => (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  className="text-sm text-foreground/70 hover:text-foreground transition-colors duration-300 relative group"
+                >
+                  {link.name}
+                  <span className="absolute -bottom-1 left-0 w-0 h-px bg-foreground transition-all duration-300 group-hover:w-full" />
+                </a>
+              ))}
+            </div>
+
+            {/* Desktop CTA */}
+            <div className="hidden lg:flex items-center gap-4">
+              <a href="tel:+16504125014" className={`text-foreground/70 hover:text-foreground transition-all duration-500 font-mono ${isScrolled ? "text-xs" : "text-sm"}`}>
+                (650) 412-5014
+              </a>
+              <Button
+                size="sm"
+                className={`bg-foreground hover:bg-foreground/90 text-background rounded-full transition-all duration-500 ${isScrolled ? "px-4 h-8 text-xs" : "px-6"}`}
+                asChild
+              >
+                <a href="/contact">Get Free Quote</a>
+              </Button>
+            </div>
+
+            {/* Mobile Menu Button */}
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="lg:hidden p-2 relative z-50"
+              aria-label="Toggle menu"
             >
-              Get Free Quote
-            </Button>
+              {isMobileMenuOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
+            </button>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2"
-            aria-label="Toggle menu"
-          >
-            {isMobileMenuOpen ? (
-              <X className="w-6 h-6" />
-            ) : (
-              <Menu className="w-6 h-6" />
-            )}
-          </button>
-        </div>
-
-      </nav>
+        </nav>
+      </header>
       
       {/* Mobile Menu - Full Screen Overlay */}
       <div
-        className={`md:hidden fixed inset-0 bg-background z-40 transition-all duration-500 ${
+        className={`lg:hidden fixed inset-0 bg-background z-40 transition-all duration-500 ${
           isMobileMenuOpen 
             ? "opacity-100 pointer-events-auto" 
             : "opacity-0 pointer-events-none"
         }`}
-        style={{ top: 0 }}
       >
-        <div className="flex flex-col h-full px-8 pt-28 pb-8">
+        <div className="flex flex-col h-full px-6 md:px-8 pt-24 md:pt-28 pb-8">
           {/* Navigation Links */}
-          <div className="flex-1 flex flex-col justify-center gap-8">
+          <div className="flex-1 flex flex-col justify-center gap-6 md:gap-8">
             {navLinks.map((link, i) => (
               <a
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className={`text-5xl font-display text-foreground hover:text-muted-foreground transition-all duration-500 ${
+                className={`text-4xl md:text-5xl font-display text-foreground hover:text-muted-foreground transition-all duration-500 ${
                   isMobileMenuOpen 
                     ? "opacity-100 translate-y-0" 
                     : "opacity-0 translate-y-4"
@@ -125,30 +134,42 @@ export function Navigation() {
             ))}
           </div>
           
-          {/* Bottom CTAs */}
-          <div className={`flex gap-4 pt-8 border-t border-foreground/10 transition-all duration-500 ${
+          {/* Bottom Section - Phone and CTAs */}
+          <div className={`flex flex-col gap-6 pt-6 border-t border-foreground/10 transition-all duration-500 ${
             isMobileMenuOpen 
               ? "opacity-100 translate-y-0" 
               : "opacity-0 translate-y-4"
           }`}
           style={{ transitionDelay: isMobileMenuOpen ? "300ms" : "0ms" }}
           >
-            <Button 
-              variant="outline" 
-              className="flex-1 rounded-full h-14 text-base"
-              onClick={() => { setIsMobileMenuOpen(false); window.location.href = 'tel:+16504125014'; }}
+            {/* Phone Number */}
+            <a 
+              href="tel:+16504125014" 
+              className="text-2xl md:text-3xl font-mono text-center text-foreground/70 hover:text-foreground transition-colors"
+              onClick={() => setIsMobileMenuOpen(false)}
             >
-              Call Us
-            </Button>
-            <Button 
-              className="flex-1 bg-foreground text-background rounded-full h-14 text-base"
-              onClick={() => { setIsMobileMenuOpen(false); window.location.href = 'tel:+16504125014'; }}
-            >
-              Get Free Quote
-            </Button>
+              (650) 412-5014
+            </a>
+            
+            {/* Action Buttons */}
+            <div className="flex gap-4">
+              <Button 
+                variant="outline" 
+                className="flex-1 rounded-full h-12 md:h-14 text-sm md:text-base"
+                onClick={() => { setIsMobileMenuOpen(false); window.location.href = 'tel:+16504125014'; }}
+              >
+                Call Now
+              </Button>
+              <Button 
+                className="flex-1 bg-foreground text-background rounded-full h-12 md:h-14 text-sm md:text-base"
+                onClick={() => { setIsMobileMenuOpen(false); window.location.href = '/contact'; }}
+              >
+                Get Free Quote
+              </Button>
+            </div>
           </div>
         </div>
       </div>
-    </header>
+    </>
   );
 }

@@ -85,7 +85,7 @@ export function ProductShowcaseSection() {
 
       {/* Slider */}
       <div className={`max-w-[1400px] mx-auto px-6 lg:px-12 transition-opacity duration-700 ${isVisible ? "opacity-100" : "opacity-0"}`}>
-        <div className="relative overflow-hidden rounded-3xl" style={{ height: "480px" }}>
+        <div className="relative overflow-hidden rounded-2xl md:rounded-3xl" style={{ height: "auto", minHeight: "400px" }}>
 
           {/* Exiting card */}
           {prevProduct && (
@@ -141,26 +141,26 @@ export function ProductShowcaseSection() {
 
 function SlideContent({ product }: { product: Product }) {
   return (
-    <div className="flex flex-col lg:flex-row h-full w-full">
+    <div className="flex flex-col md:flex-row h-full w-full min-h-[400px] md:min-h-[480px]">
       {/* Image side */}
-      <div className="relative flex-1 lg:w-1/2">
+      <div className="relative flex-1 md:w-1/2 min-h-[200px] md:min-h-full">
         <Image
           src={product.image}
           alt={product.name}
           fill
           className={`${product.imageFit}`}
-          sizes="(max-width: 1024px) 100vw, 50vw"
+          sizes="(max-width: 768px) 100vw, 50vw"
           priority
         />
       </div>
       {/* Text side */}
-      <div className={`flex flex-col justify-center px-8 lg:px-16 py-8 lg:w-1/2 ${product.dark ? "text-white" : "text-foreground"}`}>
-        <span className="inline-block text-[10px] font-mono tracking-widest uppercase px-3 py-1.5 rounded-full bg-black/10 w-fit mb-6">
+      <div className={`flex flex-col justify-center px-6 md:px-12 lg:px-16 py-6 md:py-8 md:w-1/2 ${product.dark ? "text-white" : "text-foreground"}`}>
+        <span className="inline-block text-[10px] font-mono tracking-widest uppercase px-3 py-1.5 rounded-full bg-black/10 w-fit mb-4 md:mb-6">
           {product.badge}
         </span>
         <p className="text-xs font-mono text-current opacity-40 mb-2">{product.id} / 05</p>
-        <h3 className="text-3xl lg:text-5xl font-display tracking-tight mb-4">{product.name}</h3>
-        <p className={`text-base leading-relaxed ${product.dark ? "text-white/60" : "text-foreground/60"} max-w-xs`}>{product.desc}</p>
+        <h3 className="text-2xl md:text-3xl lg:text-5xl font-display tracking-tight mb-3 md:mb-4">{product.name}</h3>
+        <p className={`text-sm md:text-base leading-relaxed ${product.dark ? "text-white/60" : "text-foreground/60"} max-w-xs`}>{product.desc}</p>
       </div>
     </div>
   );

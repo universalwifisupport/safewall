@@ -26,7 +26,7 @@ export function HeroSection() {
   return (
     <section className="relative min-h-screen flex flex-col justify-center overflow-hidden">
       {/* Animated sphere background */}
-      <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[600px] h-[600px] lg:w-[800px] lg:h-[800px] opacity-40 pointer-events-none">
+      <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[300px] h-[300px] md:w-[500px] md:h-[500px] lg:w-[800px] lg:h-[800px] opacity-40 pointer-events-none">
         <AnimatedSphere />
       </div>
       
@@ -60,7 +60,7 @@ export function HeroSection() {
         {/* Main headline */}
         <div className="mb-6">
           <h1 
-            className={`text-[clamp(3rem,12vw,10rem)] font-display leading-[0.9] tracking-tight transition-all duration-1000 ${
+            className={`text-[clamp(2.5rem,10vw,10rem)] font-display leading-[0.9] tracking-tight transition-all duration-1000 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
@@ -92,10 +92,10 @@ export function HeroSection() {
         </div>
         
         {/* Description */}
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-24 items-end mb-16">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-24 items-end mb-12 lg:mb-16">
           <div>
             <p 
-              className={`text-xl lg:text-2xl text-muted-foreground leading-relaxed max-w-xl transition-all duration-700 delay-200 ${
+              className={`text-lg md:text-xl lg:text-2xl text-muted-foreground leading-relaxed max-w-xl transition-all duration-700 delay-200 ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
               }`}
             >
@@ -132,7 +132,7 @@ export function HeroSection() {
           
           {/* Hero Image */}
           <div 
-            className={`relative h-[280px] lg:h-[340px] rounded-2xl overflow-hidden transition-all duration-700 delay-300 -mt-48 lg:-mt-64 -ml-8 lg:-ml-16 ${
+            className={`relative h-[280px] sm:h-[360px] md:h-[400px] lg:h-[420px] rounded-2xl overflow-hidden transition-all duration-700 delay-300 -mt-4 sm:mt-0 md:-mt-24 lg:-mt-48 md:-ml-6 lg:-ml-16 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
@@ -140,9 +140,9 @@ export function HeroSection() {
               src="/product-camera-hd.png"
               alt="HD security camera for smart home protection"
               fill
-              className="object-cover"
+              className="object-contain scale-110 sm:scale-110 md:scale-100 md:object-cover"
               priority
-              sizes="(max-width: 1024px) 100vw, 50vw"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 60vw, 50vw"
               quality={90}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-background/40 to-transparent" />
@@ -153,24 +153,24 @@ export function HeroSection() {
       
       {/* Stats marquee - full width outside container */}
       <div 
-        className={`absolute bottom-24 left-0 right-0 transition-all duration-700 delay-500 ${
+        className={`absolute bottom-16 md:bottom-24 left-0 right-0 transition-all duration-700 delay-500 overflow-hidden ${
           isVisible ? "opacity-100" : "opacity-0"
         }`}
       >
-        <div className="flex gap-16 marquee whitespace-nowrap">
+        <div className="flex gap-8 md:gap-16 marquee whitespace-nowrap">
           {[...Array(2)].map((_, i) => (
-            <div key={i} className="flex gap-16">
+            <div key={i} className="flex gap-8 md:gap-16">
               {[
                 { value: "50,000+", label: "homes protected", company: "USA" },
                 { value: "99.99%", label: "system uptime", company: "GUARANTEE" },
                 { value: "24/7", label: "professional monitoring", company: "CERTIFIED" },
                 { value: "< 30s", label: "emergency response", company: "AVERAGE" },
               ].map((stat) => (
-                <div key={`${stat.company}-${i}`} className="flex items-baseline gap-4">
-                  <span className="text-4xl lg:text-5xl font-display">{stat.value}</span>
-                  <span className="text-sm text-muted-foreground">
+                <div key={`${stat.company}-${i}`} className="flex items-baseline gap-2 md:gap-4">
+                  <span className="text-2xl md:text-4xl lg:text-5xl font-display">{stat.value}</span>
+                  <span className="text-xs md:text-sm text-muted-foreground">
                     {stat.label}
-                    <span className="block font-mono text-xs mt-1">{stat.company}</span>
+                    <span className="block font-mono text-[10px] md:text-xs mt-1">{stat.company}</span>
                   </span>
                 </div>
               ))}

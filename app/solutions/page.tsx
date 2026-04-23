@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Navigation } from "@/components/landing/navigation";
 import { FooterSection } from "@/components/landing/footer-section";
 import { Button } from "@/components/ui/button";
@@ -59,18 +60,81 @@ export default function SolutionsPage() {
     <main className="relative min-h-screen overflow-x-hidden">
       <Navigation />
       
-      {/* Hero Section */}
-      <section className="relative py-32 lg:py-40 border-b border-foreground/10">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-          <div className="max-w-3xl">
-            <h1 className="text-5xl lg:text-7xl font-display tracking-tight mb-6">
-              Security Solutions
-              <br />
-              <span className="text-muted-foreground">For every need</span>
-            </h1>
-            <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
-              From single homes to commercial properties, we have the perfect security solution for you.
-            </p>
+      {/* Hero Section - Featured Solution Showcase */}
+      <section className="relative border-b border-foreground/10">
+        <div className="max-w-[1400px] mx-auto px-6 lg:px-12 py-24 lg:py-32">
+          {/* Main Content */}
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-16">
+            <div>
+              <h1 className="text-5xl lg:text-6xl font-display tracking-tight mb-6">
+                Tailored Security Solutions
+              </h1>
+              <p className="text-xl text-muted-foreground leading-relaxed mb-8">
+                From single-family homes to multi-property portfolios, we design custom security systems that adapt to your unique needs and scale with you.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button asChild size="lg">
+                  <Link href="/contact">
+                    Get Free Consultation
+                    <ArrowRight className="w-4 h-4 ml-2" />
+                  </Link>
+                </Button>
+                <Button asChild size="lg" variant="outline">
+                  <Link href="/products">
+                    View Products
+                  </Link>
+                </Button>
+              </div>
+            </div>
+
+            {/* Featured Solution Preview */}
+            <div className="relative">
+              <div className="relative rounded-2xl overflow-hidden border border-foreground/10 bg-foreground/5">
+                <Image
+                  src="/smart-home-ecosystem.jpg"
+                  alt="Smart Home Security System"
+                  width={600}
+                  height={400}
+                  className="w-full h-auto"
+                  loading="eager"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                <div className="absolute bottom-6 left-6 right-6 text-white">
+                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary text-white text-sm font-medium mb-3">
+                    <Zap className="w-3 h-3" />
+                    Most Popular
+                  </div>
+                  <h3 className="text-2xl font-display mb-2">Complete Smart Home Protection</h3>
+                  <p className="text-white/90 text-sm">4K cameras, smart locks, sensors, and 24/7 monitoring</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Quick Solutions Grid */}
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            {[
+              { icon: Home, label: "Residential" },
+              { icon: Lock, label: "Apartments" },
+              { icon: Camera, label: "Multi-Property" },
+              { icon: Bell, label: "24/7 Monitoring" },
+              { icon: Zap, label: "Smart Home" },
+              { icon: Shield, label: "Professional Install" },
+            ].map((item, index) => {
+              const Icon = item.icon;
+              return (
+                <div
+                  key={index}
+                  className="flex flex-col items-center justify-center p-4 rounded-xl border border-foreground/10 bg-background hover:bg-foreground/[0.02] hover:border-primary/30 transition-all duration-300 group"
+                >
+                  <div className="w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
+                    <Icon className="w-5 h-5" />
+                  </div>
+                  <span className="text-sm font-medium text-center">{item.label}</span>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
