@@ -137,5 +137,5 @@ Check deployment status: https://github.com/universalwifisupport/safewall/action
 
 ## Need Help?
 
-Contact: support@safewallsystems.com
+Contact: info@safewallsystems.com
 Phone: (650) 412-5014

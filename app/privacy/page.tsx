@@ -95,7 +95,7 @@ export default function PrivacyPage() {
             <div>
               <h2 className="text-2xl font-display mb-4">5. Your Rights</h2>
               <p className="text-muted-foreground leading-relaxed">
-                You have the right to access, correct, or delete your personal information. You may also opt out of receiving promotional communications from us at any time. To exercise these rights, please contact us at privacy@safewallsystems.com.
+                You have the right to access, correct, or delete your personal information. You may also opt out of receiving promotional communications from us at any time. To exercise these rights, please contact us at info@safewallsystems.com.
               </p>
             </div>
 
@@ -107,8 +107,8 @@ export default function PrivacyPage() {
               <div className="mt-4 text-muted-foreground">
                 <p>Safe Wall Systems, Inc.</p>
                 <p>Privacy Department</p>
-                <p>Email: privacy@safewallsystems.com</p>
-                <p>Phone: (555) 123-4567</p>
+                <p>Email: info@safewallsystems.com</p>
+                <p>Phone: (650) 412-5014</p>
               </div>
             </div>
           </div>

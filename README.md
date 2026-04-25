@@ -137,7 +137,7 @@ Domain: **safewallsystems.com**
 ## 🆘 Support
 
 For issues or questions:
-- Email: support@safewallsystems.com
+- Email: info@safewallsystems.com
 - Phone: (650) 412-5014
 
 ---

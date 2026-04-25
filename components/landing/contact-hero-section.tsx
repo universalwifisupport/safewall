@@ -61,7 +61,7 @@ export function ContactHeroSection() {
 
             {/* Email Card */}
             <Link 
-              href="mailto:support@safewallsystems.com"
+              href="mailto:info@safewallsystems.com"
               className="group relative p-6 rounded-2xl border border-foreground/10 bg-background hover:bg-foreground/[0.02] hover:border-primary/50 transition-all duration-300"
             >
               <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">

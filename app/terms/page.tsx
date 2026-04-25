@@ -114,8 +114,8 @@ export default function TermsPage() {
               <div className="text-muted-foreground">
                 <p>Safe Wall Systems, Inc.</p>
                 <p>Legal Department</p>
-                <p>Email: legal@safewallsystems.com</p>
-                <p>Phone: (555) 123-4567</p>
+                <p>Email: info@safewallsystems.com</p>
+                <p>Phone: (650) 412-5014</p>
               </div>
             </div>
           </div>
