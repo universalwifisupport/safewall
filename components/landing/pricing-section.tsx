@@ -159,7 +159,7 @@ export function PricingSection() {
               </ul>
 
               {/* CTA */}
-              <a href="tel:+18170036248" className="block">
+              <a href="tel:+18552263393" className="block">
                 <button
                   className={`w-full py-4 flex items-center justify-center gap-2 text-sm font-medium transition-all group ${
                     plan.popular
@@ -167,7 +167,7 @@ export function PricingSection() {
                       : "border border-foreground/20 text-foreground hover:border-foreground hover:bg-foreground/5"
                   }`}
                 >
-                  {plan.popular ? "Call (817) 003-6248" : plan.cta}
+                  {plan.popular ? "Call (855) 226-3393" : plan.cta}
                   <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                 </button>
               </a>

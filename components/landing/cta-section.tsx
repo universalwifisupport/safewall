@@ -62,16 +62,16 @@ export function CtaSection() {
                 </p>
 
                 <div className="flex flex-col sm:flex-row items-start gap-4">
-                  <a href="tel:+18170036248">
+                  <a href="tel:+18552263393">
                     <Button
                       size="lg"
                       className="bg-foreground hover:bg-foreground/90 text-background px-8 h-14 text-base rounded-full group"
                     >
-                      Call (817) 003-6248
+                      Call (855) 226-3393
                       <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
                     </Button>
                   </a>
-                  <a href="tel:+18170036248">
+                  <a href="tel:+18552263393">
                     <Button
                       size="lg"
                       variant="outline"

@@ -119,9 +119,9 @@ export default function ProductsPage() {
                         </ul>
                       </div>
                       
-                      <a href="tel:+18170036248">
+                      <a href="tel:+18552263393">
                         <Button className="bg-foreground hover:bg-foreground/90 text-background rounded-full px-6 lg:px-8 h-12 lg:h-14 text-sm lg:text-base w-full sm:w-fit group">
-                          Call (817) 003-6248
+                          Call (855) 226-3393
                           <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
                         </Button>
                       </a>
@@ -177,9 +177,9 @@ export default function ProductsPage() {
           <p className="text-lg lg:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             Mix and match products to create the ideal security solution for your home.
           </p>
-          <a href="tel:+18170036248">
+          <a href="tel:+18552263393">
             <Button size="lg" className="bg-foreground hover:bg-foreground/90 text-background rounded-full px-8 h-14 text-base w-full sm:w-auto">
-              Call (817) 003-6248
+              Call (855) 226-3393
               <ArrowRight className="w-4 h-4 ml-2" />
             </Button>
           </a>
