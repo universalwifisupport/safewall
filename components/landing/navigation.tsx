@@ -144,11 +144,11 @@ export function Navigation() {
           >
             {/* Phone Number */}
             <a 
-              href="tel:+16504125014" 
+              href="tel:+18170036248" 
               className="text-2xl md:text-3xl font-mono text-center text-foreground/70 hover:text-foreground transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              (650) 412-5014
+              (817) 003-6248
             </a>
             
             {/* Action Buttons */}
@@ -156,7 +156,7 @@ export function Navigation() {
               <Button 
                 variant="outline" 
                 className="flex-1 rounded-full h-12 md:h-14 text-sm md:text-base"
-                onClick={() => { setIsMobileMenuOpen(false); window.location.href = 'tel:+16504125014'; }}
+                onClick={() => { setIsMobileMenuOpen(false); window.location.href = 'tel:+18170036248'; }}
               >
                 Call Now
               </Button>
