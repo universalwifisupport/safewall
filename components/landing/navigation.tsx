@@ -55,10 +55,10 @@ export function Navigation() {
 
             {/* Mobile Phone Number */}
             <a 
-              href="tel:+16504125014" 
+              href="tel:+18170036248" 
               className={`md:hidden text-foreground/70 hover:text-foreground transition-all duration-500 font-mono ${isScrolled ? "text-xs" : "text-sm"}`}
             >
-              (650) 412-5014
+              (817) 003-6248
             </a>
 
             {/* Desktop Navigation */}
@@ -77,8 +77,8 @@ export function Navigation() {
 
             {/* Desktop CTA */}
             <div className="hidden lg:flex items-center gap-4">
-              <a href="tel:+16504125014" className={`text-foreground/70 hover:text-foreground transition-all duration-500 font-mono ${isScrolled ? "text-xs" : "text-sm"}`}>
-                (650) 412-5014
+              <a href="tel:+18170036248" className={`text-foreground/70 hover:text-foreground transition-all duration-500 font-mono ${isScrolled ? "text-xs" : "text-sm"}`}>
+                (817) 003-6248
               </a>
               <Button
                 size="sm"

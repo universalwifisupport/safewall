@@ -108,7 +108,7 @@ export default function PrivacyPage() {
                 <p>Safe Wall Systems, Inc.</p>
                 <p>Privacy Department</p>
                 <p>Email: info@safewallsystems.com</p>
-                <p>Phone: (650) 412-5014</p>
+                <p>Phone: (817) 003-6248</p>
               </div>
             </div>
           </div>

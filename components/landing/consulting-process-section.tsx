@@ -149,12 +149,12 @@ export function ConsultingProcessSection() {
                 <ArrowRight className="w-4 h-4" />
               </button>
               {activeStep === consultingSteps.length - 1 && (
-                <a href="tel:+16504125014">
+                <a href="tel:+18170036248">
                   <Button
                     size="lg"
                     className="bg-foreground hover:bg-foreground/90 text-background px-8 h-12 text-base rounded-full group ml-2"
                   >
-                    Call (650) 412-5014
+                    Call (817) 003-6248
                     <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
                   </Button>
                 </a>

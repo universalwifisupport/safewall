@@ -107,7 +107,7 @@ Update company details in:
 ### Branding
 
 Company: **Safe Wall Systems**
-Phone: **(650) 412-5014**
+Phone: **(817) 003-6248**
 Address: **367 Old Waters Hwy, Oden, AR 71961**
 Domain: **safewallsystems.com**
 
@@ -138,7 +138,7 @@ Domain: **safewallsystems.com**
 
 For issues or questions:
 - Email: info@safewallsystems.com
-- Phone: (650) 412-5014
+- Phone: (817) 003-6248
 
 ---
 
