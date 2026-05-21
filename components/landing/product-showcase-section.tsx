@@ -5,11 +5,11 @@ import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const products = [
-  { id: "01", name: "Aura Cam Pro", badge: "4K HDR", desc: "Crystal-clear 4K HDR footage day and night, with wide-angle coverage and instant alerts.", image: "/product-camera-hd.png", imageFit: "object-contain", dark: false, bg: "bg-[#f0f0ee]" },
-  { id: "02", name: "Smart Doorbell", badge: "TWO-WAY HD", desc: "See and speak to visitors in real time from anywhere. Motion zones, package detection included.", image: "/security-camera.jpg", imageFit: "object-cover", dark: true, bg: "bg-[#2a2017]" },
-  { id: "03", name: "Vault Lock", badge: "AUTO-LOCK", desc: "Keyless entry with auto-lock, access logs, and one-tap lockdown from your phone.", image: "/product-smart-lock.jpg", imageFit: "object-cover", dark: true, bg: "bg-[#1a1a1a]" },
-  { id: "04", name: "Pulse Sensor", badge: "PET-IMMUNE", desc: "Pet-immune motion detection keeps false alarms out and real threats in focus.", image: "/product-sensors.jpg", imageFit: "object-cover", dark: false, bg: "bg-[#e8e4de]" },
-  { id: "05", name: "Control Panel", badge: "TOUCH & VOICE", desc: "The nerve center of your system. Touch, voice, or app — total control at your fingertips.", image: "/product-control-panel.jpg", imageFit: "object-cover", dark: true, bg: "bg-[#1c2a3a]" },
+  { id: "01", name: "Aura Cam Pro", badge: "4K HDR SECURITY", desc: "Experience next-gen surveillance with our 4K HDR outdoor security camera. Get crystal-clear day and night footage, ultra-wide-angle coverage, and AI-powered instant motion alerts directly on your phone.", image: "/product-camera-hd.png", imageFit: "object-contain", dark: false, bg: "bg-[#f0f0ee]" },
+  { id: "02", name: "SecureView Smart Doorbell", badge: "2-WAY HD VIDEO", desc: "See, hear, and speak to visitors in real time from anywhere with our HD video doorbell. Features customized smart motion zones and advanced AI package detection to secure your doorstep.", image: "/security-camera.jpg", imageFit: "object-cover", dark: true, bg: "bg-[#2a2017]" },
+  { id: "03", name: "Vault Smart Lock", badge: "SMART AUTO-LOCK", desc: "Upgrade to keyless entry with our high-security smart door lock. Features automatic locking, real-time access logs, and a one-tap emergency lockdown mode managed entirely via your home automation app.", image: "/product-smart-lock.jpg", imageFit: "object-cover", dark: true, bg: "bg-[#1a1a1a]" },
+  { id: "04", name: "Pulse Motion Sensor", badge: "PET-IMMUNE MOTION", desc: "Protect every corner with an advanced wireless motion sensor. Built with pet-immune technology to eliminate annoying false alarms while keeping real threats instantly in focus.", image: "/product-sensors.jpg", imageFit: "object-cover", dark: false, bg: "bg-[#e8e4de]" },
+  { id: "05", name: "Command Center Touchscreen", badge: "TOUCH & VOICE CONTROL", desc: "The central hub of your smart home automation system. Control your entire property effortlessly using an intuitive touchscreen, voice commands, or your mobile app--putting total security at your fingertips.", image: "/product-control-panel.jpg", imageFit: "object-cover", dark: true, bg: "bg-[#1c2a3a]" },
 ];
 
 type Product = typeof products[0];
@@ -74,11 +74,11 @@ export function ProductShowcaseSection() {
               Our Hardware
             </span>
             <h2 className="text-4xl lg:text-6xl font-display tracking-tight">
-              The Safe Wall Systems<br /><span className="text-muted-foreground">collection.</span>
+              The Safe Wall Systems<br /><span className="text-muted-foreground">Collection.</span>
             </h2>
           </div>
           <p className="text-lg text-muted-foreground max-w-sm leading-relaxed">
-            Each device is engineered to protect your home and designed to complement it. No clunky plastic. Just refined hardware that works in concert.
+            Each device is engineered to protect your home and designed to complement it. No clunky plastic--just premium smart home security hardware that works in perfect concert.
           </p>
         </div>
       </div>
@@ -154,7 +154,7 @@ function SlideContent({ product }: { product: Product }) {
         />
       </div>
       {/* Text side */}
-      <div className={`flex flex-col justify-center px-6 md:px-12 lg:px-16 py-6 md:py-8 md:w-1/2 ${product.dark ? "text-white" : "text-foreground"}`}>
+      <div className={`flex flex-col justify-start pt-2 md:pt-4 lg:pt-6 px-6 md:px-12 lg:px-16 pb-8 md:pb-12 md:w-1/2 ${product.dark ? "text-white" : "text-foreground"}`}>
         <span className="inline-block text-[10px] font-mono tracking-widest uppercase px-3 py-1.5 rounded-full bg-black/10 w-fit mb-4 md:mb-6">
           {product.badge}
         </span>

@@ -21,7 +21,7 @@ const reasons = [
     icon: Zap,
     number: "03",
     title: "Latest Technology",
-    description: "4K cameras, AI-powered alerts, and seamless smart home integration — always updated, never outdated.",
+    description: "4K cameras, AI-powered alerts, and seamless smart home integration -- always updated, never outdated.",
   },
   {
     icon: DollarSign,
@@ -81,7 +81,7 @@ export function WhyChooseUsSection() {
               <span className="text-muted-foreground">by design.</span>
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-12">
-              Thousands of families choose us — and stay with us year after year.
+              Thousands of families choose us -- and stay with us year after year.
             </p>
 
             {/* Reasons list */}

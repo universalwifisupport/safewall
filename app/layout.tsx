@@ -21,8 +21,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Safe Wall Systems - Professional Home Security & Smart Systems',
-  description: 'Advanced home security with 24/7 professional monitoring, smart cameras, and intelligent automation. Protect your home with Safe Wall Systems.',
+  title: 'Expert Research of Home Security and Home Safety Products',
+  description: 'Safe Wall Systems is the 1st trusted resource for home security and safety. Our experts share tips and ways to protect yourself and your family.',
   icons: {
     icon: '/icon.svg',
     apple: '/apple-icon.png',
@@ -36,6 +36,27 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Safe Wall Systems",
+            "url": "https://safewallsystems.com/",
+            "logo": "https://safewallsystems.com/icon.svg",
+            "description": "Safe Wall Systems provides advanced security wall systems, fire protection solutions, and durable wall technologies for commercial, industrial, and residential applications.",
+            "address": {
+              "@type": "PostalAddress",
+              "addressCountry": "IN"
+            },
+            "sameAs": [
+              "https://www.facebook.com/",
+              "https://www.instagram.com/",
+              "https://www.linkedin.com/"
+            ]
+          })}
+        </script>
+      </head>
       <body className={`${instrumentSans.variable} ${instrumentSerif.variable} ${jetbrainsMono.variable} font-sans antialiased`}>
         {children}
       </body>

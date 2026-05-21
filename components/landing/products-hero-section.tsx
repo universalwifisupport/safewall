@@ -24,7 +24,7 @@ export function ProductsHeroSection() {
           </h1>
           
           <p className="text-xl lg:text-2xl text-muted-foreground leading-relaxed mb-8">
-            Professional-grade technology designed for modern homes. Every device works together seamlessly for complete protection.
+            Experience next-generation, professional-grade technology engineered for modern households. Discover an ecosystem where every smart home automation sensor and camera works together seamlessly for uncompromised, complete protection.
           </p>
 
           <Button asChild size="lg" className="gap-2">

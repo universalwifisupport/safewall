@@ -87,11 +87,10 @@ export function HeroSection() {
               </span>
               {" "}Your
             </span>
-            <span className="block">Home</span>
+            <span className="block">Home 24/7</span>
           </h1>
         </div>
         
-        {/* Description */}
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-24 items-end mb-12 lg:mb-16">
           <div>
             <p 
@@ -99,8 +98,7 @@ export function HeroSection() {
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
               }`}
             >
-              Advanced smart home security with 24/7 professional monitoring. 
-              Peace of mind, wherever you are.
+              Safeguard your home and family with our in-depth product reviews, expert comparison guides, and other resources.
             </p>
             
             {/* CTAs */}

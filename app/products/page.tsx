@@ -57,8 +57,8 @@ const products = [
 ];
 
 export const metadata = {
-  title: "Products - Safe Wall Systems",
-  description: "Explore our complete line of home security products.",
+  title: "Advanced Smart Home Security Systems & Automation Products",
+  description: "Explore professional-grade smart security solutions. Shop top-tier 4K cameras, wireless alarm systems, and smart locks with 24/7 monitoring support.",
 };
 
 export default function ProductsPage() {

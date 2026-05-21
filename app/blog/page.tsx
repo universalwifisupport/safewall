@@ -68,8 +68,8 @@ const blogPosts = [
 ];
 
 export const metadata = {
-  title: "Blog - Safe Wall Systems",
-  description: "Expert insights on home security, technology, and safety tips.",
+  title: "Home Security Blog | Expert Safety Tips & Smart Automation",
+  description: "Read Safe Wall Systems blog for expert home security tips, smart technology buying guides, and DIY family safety advice to keep your property protected.",
 };
 
 export default function BlogPage() {
@@ -103,7 +103,7 @@ export default function BlogPage() {
                   <span className="block text-primary">Insights & Tips</span>
                 </h1>
                 <p className="text-xl text-muted-foreground leading-relaxed">
-                  Expert advice on home security, smart technology, and safety best practices. Stay informed, stay protected.
+                  Discover expert advice on home security systems, cutting-edge smart technology integration, and residential safety best practices. Stay informed, stay fully protected.
                 </p>
               </div>
 

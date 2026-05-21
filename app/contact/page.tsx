@@ -4,8 +4,8 @@ import { ContactHeroSection } from "@/components/landing/contact-hero-section";
 import { ContactForm } from "@/components/landing/contact-form";
 
 export const metadata = {
-  title: "Contact Us - Safe Wall Systems",
-  description: "Get in touch with our security experts for a free consultation.",
+  title: "Contact Safe Wall Systems | Get a Free Security Quote",
+  description: "Contact Safe Wall Systems today. Speak with our certified home security experts for custom system recommendations, support, or a free safety assessment.",
 };
 
 export default function ContactPage() {

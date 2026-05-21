@@ -25,7 +25,7 @@ export function ContactHeroSection() {
             </h1>
             
             <p className="text-xl text-muted-foreground leading-relaxed mb-8">
-              Our security experts are standing by to answer your questions, provide personalized recommendations, and schedule your free home security assessment.
+              Our certified home security experts are standing by to answer your technical questions, provide personalized automation recommendations, and schedule your comprehensive free home security assessment.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">

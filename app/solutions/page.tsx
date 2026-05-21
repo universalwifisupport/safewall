@@ -51,8 +51,8 @@ const solutions = [
 ];
 
 export const metadata = {
-  title: "Solutions - Safe Wall Systems",
-  description: "Explore our comprehensive home security solutions for every need.",
+  title: "Smart Home Security Systems & Custom Protection Solutions",
+  description: "Protect your property with smart home security systems. Get expert installation, 4K wireless security cameras, and 24/7 professional monitoring services.",
 };
 
 export default function SolutionsPage() {
@@ -70,7 +70,7 @@ export default function SolutionsPage() {
                 Tailored Security Solutions
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed mb-8">
-                From single-family homes to multi-property portfolios, we design custom security systems that adapt to your unique needs and scale with you.
+                From single-family homes to commercial multi-property portfolios, we engineer custom smart home security systems that seamlessly adapt to your lifestyle. Scale your safety with tech that evolves with you.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg">

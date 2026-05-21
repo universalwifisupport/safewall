@@ -5,8 +5,8 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Award, Users, Shield, Zap } from "lucide-react";
 
 export const metadata = {
-  title: "About Safe Wall Systems - Home Security Experts",
-  description: "Learn about Safe Wall Systems's mission to protect families and businesses.",
+  title: "About Safe Wall Systems | Trusted Home Security Company",
+  description: "Learn about Safe Wall Systems. We are a trusted home security company offering smart automation, 4K wireless cameras, and 24/7 professional monitoring.",
 };
 
 const teamValues = [

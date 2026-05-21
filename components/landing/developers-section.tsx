@@ -60,7 +60,7 @@ export function DevelopersSection() {
               <span className="text-muted-foreground">every step of the way.</span>
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-10">
-              Our certified technicians handle everything — no DIY frustration, no guesswork. Just a perfectly installed system from day one.
+              Our certified technicians handle everything -- no DIY frustration, no guesswork. Just a perfectly installed system from day one.
             </p>
 
             {/* Step selector */}
@@ -110,7 +110,7 @@ export function DevelopersSection() {
               {/* Active step badge */}
               <div className="absolute bottom-5 left-5 z-10 flex items-center gap-3 bg-background/90 backdrop-blur-sm px-4 py-2 rounded-full">
                 <span className="w-2 h-2 rounded-full bg-green-500" />
-                <span className="text-sm font-mono">{installationSteps[activeStep].number} — {installationSteps[activeStep].title}</span>
+                <span className="text-sm font-mono">{installationSteps[activeStep].number} -- {installationSteps[activeStep].title}</span>
               </div>
             </div>
 

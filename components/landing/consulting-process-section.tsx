@@ -9,25 +9,25 @@ const consultingSteps = [
   {
     number: "01",
     title: "Free In-Home Consultation",
-    description: "Schedule a free 30-minute consultation with our security experts. We'll assess your home, identify vulnerabilities, and discuss your security needs.",
+    description: "Schedule a free 30-minute assessment with our certified home security experts. We will thoroughly evaluate your property, identify potential security vulnerabilities, and discuss your custom protection needs.",
     image: "/consultation-meeting.jpg",
   },
   {
     number: "02",
     title: "Customized Security Design",
-    description: "Based on your home layout and needs, we create a customized security plan with camera placement, sensor locations, and smart device configuration.",
+    description: "Based on your property's unique layout, we build a tailored blueprint. This includes optimal security camera placement, smart sensor mapping, and seamless smart home automation layout design.",
     image: "/custom-solution.jpg",
   },
   {
     number: "03",
-    title: "Professional Installation",
-    description: "Our certified technicians install your complete system. All wiring is concealed, equipment is professionally mounted, and everything is tested and configured.",
+    title: "Professional System Installation",
+    description: "Our certified engineers handle the complete home security system installation. We ensure all hardware is perfectly mounted, wiring is fully concealed, and every device is rigorously tested.",
     image: "/installation-steps.jpg",
   },
   {
     number: "04",
     title: "24/7 Monitoring Activation",
-    description: "Your system goes live with professional monitoring activated immediately. We ensure everything works perfectly and you're trained on all features.",
+    description: "Your system goes live with our elite 24/7 professional monitoring service activated instantly. Our team ensures flawless configuration and provides comprehensive hands-on training for your entire family.",
     image: "/24-7-monitoring.jpg",
   },
 ];
@@ -62,13 +62,13 @@ export function ConsultingProcessSection() {
             <h2
               className={`text-4xl lg:text-6xl font-display tracking-tight transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
             >
-              From consultation
+              From Consultation
               <br />
-              <span className="text-muted-foreground">to peace of mind.</span>
+              <span className="text-muted-foreground">to Peace of Mind.</span>
             </h2>
           </div>
           <p className="text-lg text-muted-foreground max-w-sm leading-relaxed">
-            Our streamlined process ensures your home is protected quickly and professionally.
+            Our streamlined home security setup process ensures your property is protected quickly, safely, and professionally.
           </p>
         </div>
 
@@ -154,7 +154,7 @@ export function ConsultingProcessSection() {
                     size="lg"
                     className="bg-foreground hover:bg-foreground/90 text-background px-8 h-12 text-base rounded-full group ml-2"
                   >
-                    Call (855) 226-3393
+                    Secure Your Home Today
                     <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
                   </Button>
                 </a>

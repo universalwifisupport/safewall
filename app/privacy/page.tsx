@@ -39,19 +39,19 @@ export default function PrivacyPage() {
               </p>
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex gap-3">
-                  <span className="text-foreground">•</span>
+                  <span className="text-foreground">*</span>
                   <span><strong>Personal Data:</strong> Name, email address, phone number, address</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-foreground">•</span>
+                  <span className="text-foreground">*</span>
                   <span><strong>Device Information:</strong> Device type, operating system, browser</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-foreground">•</span>
+                  <span className="text-foreground">*</span>
                   <span><strong>Security System Data:</strong> Camera feeds, sensor data, access logs</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-foreground">•</span>
+                  <span className="text-foreground">*</span>
                   <span><strong>Usage Data:</strong> Interaction with our app and website</span>
                 </li>
               </ul>
@@ -64,19 +64,19 @@ export default function PrivacyPage() {
               </p>
               <ul className="space-y-2 text-muted-foreground mt-4">
                 <li className="flex gap-3">
-                  <span className="text-foreground">•</span>
+                  <span className="text-foreground">*</span>
                   <span>Provide monitoring and security services</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-foreground">•</span>
+                  <span className="text-foreground">*</span>
                   <span>Process your transactions</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-foreground">•</span>
+                  <span className="text-foreground">*</span>
                   <span>Email you regarding services or updates</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-foreground">•</span>
+                  <span className="text-foreground">*</span>
                   <span>Respond to your inquiries</span>
                 </li>
               </ul>

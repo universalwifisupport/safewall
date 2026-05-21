@@ -28,7 +28,7 @@ export function AboutHeroSection() {
                 <span className="block text-primary">Matters Most</span>
               </h1>
               <p className="text-xl lg:text-2xl text-muted-foreground leading-relaxed">
-                We're not just a security company—we're your partners in creating safer homes and peace of mind for thousands of families across America.
+                We're not just a home security company--we're your dedicated partners in engineering safer spaces and delivering absolute peace of mind for thousands of families. From state-of-the-art smart home automation to elite surveillance hardware, we protect your world 24/7.
               </p>
             </div>
 

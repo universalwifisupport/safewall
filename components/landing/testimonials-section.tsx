@@ -100,7 +100,7 @@ export function TestimonialsSection() {
               <div>
                 <p className="text-lg font-medium text-foreground">{activeTestimonial.author}</p>
                 <p className="text-muted-foreground">
-                  {activeTestimonial.role} • {activeTestimonial.company}
+                  {activeTestimonial.role} * {activeTestimonial.company}
                 </p>
               </div>
             </div>

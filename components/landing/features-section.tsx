@@ -74,7 +74,7 @@ export function FeaturesSection() {
             </h2>
           </div>
           <p className="text-lg text-muted-foreground max-w-sm leading-relaxed">
-            Everything you need to keep your home and family safe � all in one system.
+            Everything you need to keep your home and family safe -- all in one system.
           </p>
         </div>
 

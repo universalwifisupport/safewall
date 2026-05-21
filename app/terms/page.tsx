@@ -39,19 +39,19 @@ export default function TermsPage() {
               </p>
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex gap-3">
-                  <span className="text-foreground">•</span>
+                  <span className="text-foreground">*</span>
                   <span>Modifying or copying the materials</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-foreground">•</span>
+                  <span className="text-foreground">*</span>
                   <span>Using the materials for any commercial purpose or for any public display</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-foreground">•</span>
+                  <span className="text-foreground">*</span>
                   <span>Attempting to decompile or reverse engineer any software contained on the website</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-foreground">•</span>
+                  <span className="text-foreground">*</span>
                   <span>Removing any copyright or other proprietary notations from the materials</span>
                 </li>
               </ul>

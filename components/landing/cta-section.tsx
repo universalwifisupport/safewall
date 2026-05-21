@@ -83,7 +83,7 @@ export function CtaSection() {
                 </div>
 
                 <p className="text-sm text-muted-foreground mt-8 font-mono">
-                  Free installation · No long-term contracts
+                  Free installation - No long-term contracts
                 </p>
               </div>
 
