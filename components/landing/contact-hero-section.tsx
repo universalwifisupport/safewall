@@ -36,7 +36,7 @@ export function ContactHeroSection() {
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="gap-2">
-                <Link href="tel:+18552263393">
+                <Link href="tel:+18559438332">
                   <Phone className="w-4 h-4" />
                   Call Now
                 </Link>
@@ -48,14 +48,14 @@ export function ContactHeroSection() {
           <div className="grid grid-cols-2 gap-4">
             {/* Phone Card */}
             <Link 
-              href="tel:+18552263393"
+              href="tel:+18559438332"
               className="group relative p-6 rounded-2xl border border-foreground/10 bg-background hover:bg-foreground/[0.02] hover:border-primary/50 transition-all duration-300"
             >
               <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                 <Phone className="w-6 h-6" />
               </div>
               <h3 className="font-semibold mb-1">Call Us</h3>
-              <p className="text-sm text-muted-foreground mb-2">(855) 226-3393</p>
+              <p className="text-sm text-muted-foreground mb-2">(855) 943-8332</p>
               <p className="text-xs text-muted-foreground">Mon-Fri, 8AM-6PM EST</p>
             </Link>
 

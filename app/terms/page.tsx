@@ -115,7 +115,7 @@ export default function TermsPage() {
                 <p>Safe Wall Systems, Inc.</p>
                 <p>Legal Department</p>
                 <p>Email: info@safewallsystems.com</p>
-                <p>Phone: (855) 226-3393</p>
+                <p>Phone: (855) 943-8332</p>
               </div>
             </div>
           </div>

@@ -61,7 +61,7 @@ const blogContent: Record<string, any> = {
       { type: "p", text: "Get notified immediately of any incorrect PIN attempts, forced entry attempts, or door left ajar. These real-time alerts give you the situational awareness to respond before a situation escalates." },
       { type: "h2", text: "10. Installation Is Simpler Than You Think" },
       { type: "p", text: "Most smart locks replace existing deadbolts using the same door prep -- no drilling required. Professional installation by our certified technicians typically takes 30 minutes per door. We configure the app, test every access method, and walk you through the features before we leave." },
-      { type: "p", text: "Ready to upgrade your doors? Safe Wall Systems installs and configures smart locks as part of our complete home security packages. Call (855) 226-3393 to get started with a free in-home assessment." },
+      { type: "p", text: "Ready to upgrade your doors? Safe Wall Systems installs and configures smart locks as part of our complete home security packages. Call (855) 943-8332 to get started with a free in-home assessment." },
     ],
   },
   "protecting-home-vacation": {
@@ -89,7 +89,7 @@ const blogContent: Record<string, any> = {
       { type: "p", text: "For trips longer than a week, ask someone to park in your driveway periodically. An empty driveway for days on end is a signal. Have your lawn maintained if you'll be gone through the weekend -- overgrown grass is another telltale sign. Consider arranging a random welfare check from a trusted friend." },
       { type: "h2", text: "When You Return" },
       { type: "p", text: "Before entering your home, do a quick exterior walk. Look for signs of tampering -- damaged locks, broken windows, disturbed entry points. If anything looks suspicious, call the police rather than entering alone. Once inside, review your security footage from the past 24 hours as a precautionary measure." },
-      { type: "p", text: "Peace of mind on vacation starts before you leave. Safe Wall Systems can help you build the right system for complete remote visibility and control. Call us at (855) 226-3393 to schedule a free home security assessment." },
+      { type: "p", text: "Peace of mind on vacation starts before you leave. Safe Wall Systems can help you build the right system for complete remote visibility and control. Call us at (855) 943-8332 to schedule a free home security assessment." },
     ],
   },
   "camera-placement-guide": {
@@ -117,7 +117,7 @@ const blogContent: Record<string, any> = {
       { type: "h2", text: "Visibility vs. Concealment" },
       { type: "p", text: "Visible cameras provide deterrence -- a significant portion of burglars report that visible security cameras influenced their decision not to target a property. However, concealed cameras provide a backup layer of evidence that can't be disabled by a determined intruder. The optimal strategy is a combination: prominent cameras at key entry points for deterrence, with less visible cameras covering interior spaces and secondary angles." },
       { type: "h2", text: "Professional Design Makes a Difference" },
-      { type: "p", text: "Our installation team at Safe Wall Systems conducts a comprehensive site survey before placing a single camera. We map blind spots, test angles, assess lighting conditions, and design a camera layout that provides complete coverage without redundancy. Call (855) 226-3393 to schedule your free security assessment." },
+      { type: "p", text: "Our installation team at Safe Wall Systems conducts a comprehensive site survey before placing a single camera. We map blind spots, test angles, assess lighting conditions, and design a camera layout that provides complete coverage without redundancy. Call (855) 943-8332 to schedule your free security assessment." },
     ],
   },
   "smart-home-integration": {
@@ -142,7 +142,7 @@ const blogContent: Record<string, any> = {
       { type: "p", text: "For professional monitoring integration, your central hub should communicate with your monitoring center via a dedicated cellular connection, not just WiFi -- this ensures monitoring continues even if your internet is cut. Our systems at Safe Wall Systems use dual-path communication: primary internet with cellular failover, providing continuous protection regardless of internet outages." },
       { type: "h2", text: "Getting Started Without Overwhelm" },
       { type: "p", text: "The mistake most people make is trying to integrate everything at once. Start with security as your foundation: cameras, sensors, and locks. Once those are working reliably, layer in lighting automation. Then add voice control. Build complexity gradually, test each addition, and you'll end up with a system that feels seamless rather than chaotic." },
-      { type: "p", text: "Our team handles the entire integration process as part of our installation service. We configure device connections, build your initial automations, and train you on the app before we leave. Call Safe Wall Systems at (855) 226-3393 to get started." },
+      { type: "p", text: "Our team handles the entire integration process as part of our installation service. We configure device connections, build your initial automations, and train you on the app before we leave. Call Safe Wall Systems at (855) 943-8332 to get started." },
     ],
   },
   "apartment-security-solutions": {
@@ -168,7 +168,7 @@ const blogContent: Record<string, any> = {
       { type: "h2", text: "Professional Monitoring Without a Contract" },
       { type: "p", text: "Professional 24/7 monitoring is not exclusive to homeowners. Our monitoring plans are available on a month-to-month basis with no long-term contracts -- specifically designed to accommodate renters who may move. The monitoring subscription travels with you: when you move, take your sensors and hub, reconnect them in your new apartment, and your monitoring service continues uninterrupted." },
       { type: "h2", text: "The Bottom Line for Renters" },
-      { type: "p", text: "Your security rights don't diminish because you rent. A complete renter-friendly system -- wireless sensors, a freestanding hub, a portable camera, and professional monitoring -- can be deployed in an afternoon and moved in an hour when your lease ends. At Safe Wall Systems, we've designed renter-specific packages that provide comprehensive protection without ever touching your walls. Call (855) 226-3393 to learn more." },
+      { type: "p", text: "Your security rights don't diminish because you rent. A complete renter-friendly system -- wireless sensors, a freestanding hub, a portable camera, and professional monitoring -- can be deployed in an afternoon and moved in an hour when your lease ends. At Safe Wall Systems, we've designed renter-specific packages that provide comprehensive protection without ever touching your walls. Call (855) 943-8332 to learn more." },
     ],
   },
 };
@@ -306,10 +306,10 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
             Implement the security strategies you just learned about.
           </p>
           <a
-            href="tel:+18552263393"
+            href="tel:+18559438332"
             className="inline-flex items-center gap-2 px-8 h-14 bg-foreground hover:bg-foreground/90 text-background rounded-full font-mono text-base transition-colors"
           >
-            Call (855) 226-3393
+            Call (855) 943-8332
             <ArrowRight className="w-4 h-4" />
           </a>
         </div>

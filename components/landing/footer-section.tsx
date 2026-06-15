@@ -62,8 +62,8 @@ export function FooterSection() {
                   367 Old Waters Hwy<br />
                   Oden, AR 71961
                 </p>
-                <a href="tel:+18552263393" className="inline-flex items-center gap-2 text-foreground font-mono text-sm font-medium hover:text-foreground/70 transition-colors">
-                  (855) 226-3393
+                <a href="tel:+18559438332" className="inline-flex items-center gap-2 text-foreground font-mono text-sm font-medium hover:text-foreground/70 transition-colors">
+                  (855) 943-8332
                 </a>
               </div>
 
