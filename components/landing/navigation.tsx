@@ -55,10 +55,10 @@ export function Navigation() {
 
             {/* Mobile Phone Number */}
             <a 
-              href="tel:+18559438332" 
+              href="tel:+18552263393" 
               className={`md:hidden text-foreground/70 hover:text-foreground transition-all duration-500 font-mono ${isScrolled ? "text-xs" : "text-sm"}`}
             >
-              (855) 943-8332
+              (855) 226-3393
             </a>
 
             {/* Desktop Navigation */}
@@ -77,8 +77,8 @@ export function Navigation() {
 
             {/* Desktop CTA */}
             <div className="hidden lg:flex items-center gap-4">
-              <a href="tel:+18559438332" className={`text-foreground/70 hover:text-foreground transition-all duration-500 font-mono ${isScrolled ? "text-xs" : "text-sm"}`}>
-                (855) 943-8332
+              <a href="tel:+18552263393" className={`text-foreground/70 hover:text-foreground transition-all duration-500 font-mono ${isScrolled ? "text-xs" : "text-sm"}`}>
+                (855) 226-3393
               </a>
               <Button
                 size="sm"
@@ -144,11 +144,11 @@ export function Navigation() {
           >
             {/* Phone Number */}
             <a 
-              href="tel:+18559438332" 
+              href="tel:+18552263393" 
               className="text-2xl md:text-3xl font-mono text-center text-foreground/70 hover:text-foreground transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              (855) 943-8332
+              (855) 226-3393
             </a>
             
             {/* Action Buttons */}
@@ -156,7 +156,7 @@ export function Navigation() {
               <Button 
                 variant="outline" 
                 className="flex-1 rounded-full h-12 md:h-14 text-sm md:text-base"
-                onClick={() => { setIsMobileMenuOpen(false); window.location.href = 'tel:+18559438332'; }}
+                onClick={() => { setIsMobileMenuOpen(false); window.location.href = 'tel:+18552263393'; }}
               >
                 Call Now
               </Button>

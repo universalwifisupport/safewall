@@ -1,6 +1,5 @@
 "use client";
 
-import { ArrowUpRight } from "lucide-react";
 import { AnimatedWave } from "./animated-wave";
 
 const footerLinks = {
@@ -17,7 +16,6 @@ const footerLinks = {
   Company: [
     { name: "About", href: "/about" },
     { name: "Contact", href: "/contact" },
-    { name: "Careers", href: "#", badge: "Hiring" },
   ],
   Legal: [
     { name: "Privacy", href: "/privacy" },
@@ -25,12 +23,6 @@ const footerLinks = {
     { name: "Security", href: "/#security" },
   ],
 };
-
-const socialLinks = [
-  { name: "Twitter", href: "#" },
-  { name: "GitHub", href: "#" },
-  { name: "LinkedIn", href: "#" },
-];
 
 export function FooterSection() {
   return (
@@ -62,23 +54,9 @@ export function FooterSection() {
                   367 Old Waters Hwy<br />
                   Oden, AR 71961
                 </p>
-                <a href="tel:+18559438332" className="inline-flex items-center gap-2 text-foreground font-mono text-sm font-medium hover:text-foreground/70 transition-colors">
-                  (855) 943-8332
+                <a href="tel:+18552263393" className="inline-flex items-center gap-2 text-foreground font-mono text-sm font-medium hover:text-foreground/70 transition-colors">
+                  (855) 226-3393
                 </a>
-              </div>
-
-              {/* Social Links */}
-              <div className="flex gap-6">
-                {socialLinks.map((link) => (
-                  <a
-                    key={link.name}
-                    href={link.href}
-                    className="text-sm text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1 group"
-                  >
-                    {link.name}
-                    <ArrowUpRight className="w-3 h-3 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
-                  </a>
-                ))}
               </div>
             </div>
 

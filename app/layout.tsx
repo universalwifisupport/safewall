@@ -48,12 +48,7 @@ export default function RootLayout({
             "address": {
               "@type": "PostalAddress",
               "addressCountry": "IN"
-            },
-            "sameAs": [
-              "https://www.facebook.com/",
-              "https://www.instagram.com/",
-              "https://www.linkedin.com/"
-            ]
+            }
           })}
         </script>
       </head>

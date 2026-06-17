@@ -149,7 +149,7 @@ export function ConsultingProcessSection() {
                 <ArrowRight className="w-4 h-4" />
               </button>
               {activeStep === consultingSteps.length - 1 && (
-                <a href="tel:+18559438332">
+                <a href="tel:+18552263393">
                   <Button
                     size="lg"
                     className="bg-foreground hover:bg-foreground/90 text-background px-8 h-12 text-base rounded-full group ml-2"
